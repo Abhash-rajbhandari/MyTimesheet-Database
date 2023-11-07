@@ -1,2 +1,23 @@
-CREATE something
-Create comethingelse
+CREATE TABLE users (
+    user_id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(64) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    full_name VARCHAR(100),
+    created_at DATETIME NOT
+ 
+NULL
+ 
+DEFAULT
+ 
+CURRENT_TIMESTAMP,
+    updated_at DATETIME NOT
+ 
+NULL
+ 
+DEFAULT
+ 
+CURRENT_TIMESTAMPS
+ 
+ON UPDATE CURRENT_TIMESTAMP
+);
