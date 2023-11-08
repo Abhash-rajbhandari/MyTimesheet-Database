@@ -12,6 +12,7 @@ NULL,
 NOT
  
 NULL,
+  UNIQUE KEY (user_id, role_id),
   FOREIGN KEY (user_id) REFERENCES users(user_id),
 
   
